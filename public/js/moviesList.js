@@ -1,6 +1,6 @@
 window.onload = function(){
     let body = document.querySelector('body');
-    let logo = document.querySelector('.logoDH')
+    let logo = document.querySelector('.logoDH');
     let moviesListTitulo = document.querySelector('.moviesListTitulo');
 
     // let modo = confirm('Desea modo oscuro');
@@ -15,7 +15,7 @@ window.onload = function(){
     });
 
     logo.addEventListener('mouseout', function(e){
-        body.style.backgroundColor = '#b8b8b8'
+        body.style.backgroundColor = ''
         body.classList.remove('fondoMoviesList');
     })
 
@@ -24,6 +24,7 @@ window.onload = function(){
     moviesListTitulo.innerHTML = 'LISTADO DE PELÍCULAS';
     moviesListTitulo.style.color ='white';
     moviesListTitulo.style.backgroundColor = 'teal';
+    moviesListTitulo.style.width = '50%'
     moviesListTitulo.style.padding = '20px';
 
 }

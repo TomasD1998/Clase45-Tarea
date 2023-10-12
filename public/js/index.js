@@ -9,7 +9,7 @@ window.onload = function(){
     let nombre = prompt('Ingrese su nombre');
     console.log(nombre);
     if(nombre !=''){
-        subtitulo.innerHTML += nombre;
+        subtitulo.innerHTML += ' ' + nombre;
     }else{
         subtitulo.innerHTML += ' INVITADO';
     }
